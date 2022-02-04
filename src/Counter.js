@@ -9,6 +9,10 @@ const Counter = () => {
   };
 
   const singleDigitNumber = Array.from(String(count), (count) => Number(count));
+  
+  useEffect(() => {
+    setCount(0);
+  }, []);
 
   return (
     <>
