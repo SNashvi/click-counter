@@ -8,7 +8,7 @@ const Counter = () => {
     }
   };
 
-  const singleDigitNumber = count.toString().split("");
+  const singleDigitNumber = Array.from(String(count), (count) => Number(count));
 
   return (
     <>
